@@ -235,7 +235,9 @@ public:
    * @param _cepin The pin attached to Chip Enable on the RF module
    * @param _cspin The pin attached to Chip Select
    */
+  RF24() {};
   RF24(uint8_t _cepin, uint8_t _cspin);
+  void setup(uint8_t _cepin, uint8_t _cspin);
 
   /**
    * Begin operation of the chip
